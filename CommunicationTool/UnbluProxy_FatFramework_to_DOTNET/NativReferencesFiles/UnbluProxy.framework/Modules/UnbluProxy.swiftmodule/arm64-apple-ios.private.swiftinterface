@@ -1,0 +1,59 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UnbluProxy
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+import UIKit
+import UnbluCallModule
+import UnbluCoreSDK
+import UnbluMobileCoBrowsingModule
+@_exported import UnbluProxy
+import _Concurrency
+import _StringProcessing
+extension UnbluProxy.UnbluProxy : UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleDelegate {
+  public func unbluMobileCoBrowsingModuleDidStartCoBrowsing(_ unbluMobileCoBrowsingModuleApi: any UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleApi)
+  public func unbluMobileCoBrowsingModuleDidStopCoBrowsing(_ unbluMobileCoBrowsingModuleApi: any UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleApi)
+}
+extension UnbluProxy.UnbluProxy : UnbluCoreSDK.UnbluVisitorClientDelegate {
+  public func unblu(didUpdateUnreadMessages count: Swift.Int)
+  public func unbluDidInitialize()
+  public func unbluDidDeinitialize()
+  public func unbluUiIsReady()
+  public func unbluDidPreloadUi()
+  public func unblu(didTransitionUiWithTransition transition: UnbluCoreSDK.UnbluUiVisibilityTransition)
+  public func unblu(didUpdatePersonInfo personInfo: UnbluCoreSDK.PersonInfo)
+  public func unblu(didChangeOpenConversation openConversation: (any UnbluCoreSDK.UnbluConversation)?)
+  public func unblu(didRequestHideUi reason: UnbluCoreSDK.UnbluUiHideRequestReason, conversationId: Swift.String?)
+  public func unblu(didRequestShowUi reason: UnbluCoreSDK.UnbluUiRequestReason, requestedByUser: Swift.Bool)
+  public func unblu(didToggleCallUi isOpen: Swift.Bool)
+  public func unblu(didReceiveError type: UnbluCoreSDK.UnbluClientErrorType, description: Swift.String)
+}
+@_inheritsConvenienceInitializers @objc(UnbluProxy) public class UnbluProxy : ObjectiveC.NSObject {
+  @objc public static let NOTIFICATION_NAME_UNREAD_MESSAGE_COUNT_CHANGED: Swift.String
+  @objc public static let NOTIFICATION_NAME_DID_INITIALIZE: Swift.String
+  @objc public static let NOTIFICATION_NAME_DID_DEINITIALIZE: Swift.String
+  @objc public static let NOTIFICATION_NAME_UI_IS_READY: Swift.String
+  @objc public static let NOTIFICATION_NAME_DID_PRELOAD_UI: Swift.String
+  @objc public static let NOTIFICATION_NAME_DID_TRANSITION_UI_WITH_TRANSITION: Swift.String
+  @objc public static let NOTIFICATION_NAME_DID_UPDATE_PERSON_INFO: Swift.String
+  @objc public static let NOTIFICATION_NAME_DID_CHANGE_OPEN_CONVERSATION: Swift.String
+  @objc public static let NOTIFICATION_NAME_DID_REQUEST_HIDE_UI: Swift.String
+  @objc public static let NOTIFICATION_NAME_DID_REQUEST_SHOW_UI: Swift.String
+  @objc public static let NOTIFICATION_NAME_DID_TOGGLE_CALL_UI: Swift.String
+  @objc public static let NOTIFICATION_NAME_DID_RECEIVED_ERROR: Swift.String
+  @objc public static let NOTIFICATION_NAME_DID_START_COBROWSING: Swift.String
+  @objc public static let NOTIFICATION_NAME_DID_STOP_COBROWSING: Swift.String
+  @objc override dynamic public init()
+  @objc public func configureApi(cookiesInString: [Swift.String : Swift.String], unbluUrlServer: Swift.String, unbluApiKey: Swift.String, enableUnbluDebugOutput: Swift.Bool = true) -> Swift.Bool
+  @objc public func start(completion: @escaping (Swift.Bool, Swift.String) -> Swift.Void)
+  @objc public func getView() -> UIKit.UIView?
+  @objc public func getUnreadMessageCount() -> Swift.Int32
+  @objc public func openConversationOverview(completion: @escaping (Swift.Bool, Swift.String) -> Swift.Void)
+  @objc public func openConversation(_ conversationId: Swift.String, completion: @escaping (Swift.Bool, Swift.String) -> Swift.Void)
+  @objc public func startAudioCall(_ conversationId: Swift.String, completion: @escaping (Swift.Bool, Swift.String) -> Swift.Void)
+  @objc public func startVideoCall(_ conversationId: Swift.String, completion: @escaping (Swift.Bool, Swift.String) -> Swift.Void)
+  @objc public func isInitialized(completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc public func stop(completion: @escaping (Swift.Bool, Swift.String) -> Swift.Void)
+  @objc deinit
+}

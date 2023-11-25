@@ -1,0 +1,336 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PSPDFKitUI
+import Combine
+import Foundation
+import MobileCoreServices
+import PSPDFKit
+@_exported import PSPDFKitUI
+import Swift
+import SwiftUI
+import UIKit
+import MobileCoreServices.UTCoreTypes
+extension PDFView {
+  public enum ActionEvent {
+    case setPageIndex(index: PSPDFKit.PageIndex, animated: Swift.Bool = true)
+    case setViewMode(viewMode: PSPDFKitUI.ViewMode, animated: Swift.Bool = true)
+    case setUserInterfaceVisible(show: Swift.Bool, animated: Swift.Bool = true)
+    case scrollToNextSpread(animated: Swift.Bool = true)
+    case scrollToPreviousSpread(animated: Swift.Bool = true)
+    case reloadPage(index: PSPDFKit.PageIndex, animated: Swift.Bool = true)
+    case reloadPages(indexes: Foundation.IndexSet, animated: Swift.Bool = true)
+    case reloadData
+    case setAnnotationMode(showAnnotationMode: Swift.Bool, animated: Swift.Bool = true)
+    case executeAction(action: PSPDFKit.Action, targetRect: CoreGraphics.CGRect, pageIndex: PSPDFKit.PageIndex, animated: Swift.Bool = true, actionContainer: Any? = nil)
+    case search(sender: Swift.AnyObject?, text: Swift.String? = nil, options: [PSPDFKitUI.PresentationOption : Any]? = nil, animated: Swift.Bool = true)
+    case showOutline(sender: Swift.AnyObject?)
+    case share(destination: PSPDFKitUI.DocumentSharingConfiguration.Destination, sender: Swift.AnyObject?)
+    case settings(sender: Swift.AnyObject?)
+    case brightness(sender: Swift.AnyObject?)
+    case readerView(sender: Swift.AnyObject?)
+    case redactionInfo(sender: Swift.AnyObject?)
+  }
+}
+public struct PDFView : SwiftUI.View {
+  public var document: PSPDFKit.Document?
+  public init(document: PSPDFKit.Document? = nil, pageIndex: SwiftUI.Binding<PSPDFKit.PageIndex>? = nil, viewMode: SwiftUI.Binding<PSPDFKitUI.ViewMode>? = nil, selectedAnnotations: SwiftUI.Binding<[PSPDFKit.Annotation]>? = nil, actionEventPublisher: Combine.PassthroughSubject<PSPDFKitUI.PDFView.ActionEvent, Swift.Never>? = nil, configuration: PSPDFKitUI.PDFConfiguration? = nil)
+  public init(document: PSPDFKit.Document? = nil, pageIndex: SwiftUI.Binding<PSPDFKit.PageIndex>? = nil, viewMode: SwiftUI.Binding<PSPDFKitUI.ViewMode>? = nil, selectedAnnotations: SwiftUI.Binding<[PSPDFKit.Annotation]>? = nil, actionEventPublisher: Combine.PassthroughSubject<PSPDFKitUI.PDFView.ActionEvent, Swift.Never>? = nil, configurationBuilder: @escaping (PSPDFKitUI.PDFConfigurationBuilder) -> Swift.Void)
+  public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10PSPDFKitUI7PDFViewV4bodyQrvp", 0) 🦸
+}
+extension PDFView {
+  public init(document: SwiftUI.ObservedObject<PSPDFKit.Document>? = nil, pageIndex: SwiftUI.Binding<PSPDFKit.PageIndex>? = nil, viewMode: SwiftUI.Binding<PSPDFKitUI.ViewMode>? = nil, selectedAnnotations: SwiftUI.Binding<[PSPDFKit.Annotation]>? = nil, actionEventPublisher: Combine.PassthroughSubject<PSPDFKitUI.PDFView.ActionEvent, Swift.Never>? = nil, configurationBuilder: @escaping (PSPDFKitUI.PDFConfigurationBuilder) -> Swift.Void)
+  public init(document: SwiftUI.ObservedObject<PSPDFKit.Document>? = nil, pageIndex: SwiftUI.Binding<PSPDFKit.PageIndex>? = nil, viewMode: SwiftUI.Binding<PSPDFKitUI.ViewMode>? = nil, selectedAnnotations: SwiftUI.Binding<[PSPDFKit.Annotation]>? = nil, actionEventPublisher: Combine.PassthroughSubject<PSPDFKitUI.PDFView.ActionEvent, Swift.Never>? = nil, configuration: PSPDFKitUI.PDFConfiguration? = nil)
+}
+extension View {
+  public func customizeTextFieldOnAppear(customizeBlock: @escaping (UIKit.UITextField) -> Swift.Void) -> some SwiftUI.View
+  
+}
+extension PDFViewController {
+  @objc override dynamic open func validate(_ command: UIKit.UICommand)
+}
+extension PDFConfiguration {
+  public var signatureCreationConfiguration: PSPDFKitUI.SignatureCreationViewController.Configuration {
+    get
+  }
+}
+extension PDFConfigurationBuilder {
+  public var signatureCreationConfiguration: PSPDFKitUI.SignatureCreationViewController.Configuration {
+    get
+    set
+  }
+}
+extension SignatureCreationViewController {
+  @objc(configuration) dynamic public var __configuration: PSPDFKitUI.__PSPDFSignatureCreationConfiguration {
+    @objc get
+    @objc set
+  }
+  @objc(PSPDFSignatureCreationMode) public enum Mode : Swift.Int {
+    case draw
+    case image
+    case type
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public struct Configuration : Swift.Hashable {
+    public static let defaultFonts: [UIKit.UIFont]
+    public var availableModes: [PSPDFKitUI.SignatureCreationViewController.Mode]
+    public var isNaturalDrawingEnabled: Swift.Bool
+    public var fonts: [UIKit.UIFont]
+    public init(availableModes: [PSPDFKitUI.SignatureCreationViewController.Mode] = [.draw, .image, .type], isNaturalDrawingEnabled: Swift.Bool = true, fonts: [UIKit.UIFont] = defaultFonts)
+    public var hashValue: Swift.Int {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PSPDFKitUI.SignatureCreationViewController.Configuration, b: PSPDFKitUI.SignatureCreationViewController.Configuration) -> Swift.Bool
+  }
+}
+extension UIGestureRecognizer {
+  public func require<T>(toFail component: PSPDFKitUI.InteractionComponent<T>) where T : AnyObject
+}
+extension PDFViewController {
+}
+extension PDFView {
+  public func onWillBeginDisplayingPageView(perform action: @escaping (PSPDFKitUI.PDFPageView, Swift.Int) -> Swift.Void) -> PSPDFKitUI.PDFView
+  public func onDidEndDisplayingPageView(perform action: @escaping (PSPDFKitUI.PDFPageView, Swift.Int) -> Swift.Void) -> PSPDFKitUI.PDFView
+  public func onShouldShowMenuItemsForSelectedText(perform action: @escaping (PSPDFKitUI.PDFPageView, [PSPDFKitUI.MenuItem], Swift.String) -> [PSPDFKitUI.MenuItem]) -> PSPDFKitUI.PDFView
+  public func onShouldShowMenuItemsForSelectedImage(perform action: @escaping (PSPDFKitUI.PDFPageView, [PSPDFKitUI.MenuItem], PSPDFKit.ImageInfo) -> [PSPDFKitUI.MenuItem]) -> PSPDFKitUI.PDFView
+  public func onShouldShowMenuItemsForSelectedAnnotations(perform action: @escaping (PSPDFKitUI.PDFPageView, [PSPDFKitUI.MenuItem], [PSPDFKit.Annotation]?) -> [PSPDFKitUI.MenuItem]) -> PSPDFKitUI.PDFView
+  public func onDidTapOnAnnotation(perform action: @escaping (PSPDFKitUI.PDFPageView, PSPDFKit.Annotation) -> Swift.Bool) -> PSPDFKitUI.PDFView
+  public func onShouldSelectAnnotations(perform action: @escaping (PSPDFKitUI.PDFPageView, [PSPDFKit.Annotation]) -> [PSPDFKit.Annotation]) -> PSPDFKitUI.PDFView
+  public func onShouldShowController(perform action: @escaping (UIKit.UIViewController, [Swift.String : Any]?, Swift.Bool) -> Swift.Bool) -> PSPDFKitUI.PDFView
+  public func onDidShowController(perform action: @escaping (UIKit.UIViewController, [Swift.String : Any]?, Swift.Bool) -> Swift.Void) -> PSPDFKitUI.PDFView
+  public func onDidDismiss(perform action: @escaping (UIKit.UIViewController) -> Swift.Void) -> PSPDFKitUI.PDFView
+}
+@usableFromInline
+internal struct NavigationBarConfigurator<Leading, Center, Trailing, LargeTrailing> : SwiftUI.UIViewControllerRepresentable where Leading : SwiftUI.View, Center : SwiftUI.View, Trailing : SwiftUI.View, LargeTrailing : SwiftUI.View {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @usableFromInline
+  internal class UIViewControllerType : UIKit.UIViewController {
+    @objc @usableFromInline
+    deinit
+  }
+  @usableFromInline
+  internal init(leading: Leading, center: Center, trailing: Trailing, largeTrailing: LargeTrailing, largeTrailingAlignment: SwiftUI.VerticalAlignment? = nil, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode?)
+  @usableFromInline
+  internal func makeUIViewController(context: PSPDFKitUI.NavigationBarConfigurator<Leading, Center, Trailing, LargeTrailing>.Context) -> PSPDFKitUI.NavigationBarConfigurator<Leading, Center, Trailing, LargeTrailing>.UIViewControllerType
+  @usableFromInline
+  internal func updateUIViewController(_ viewController: PSPDFKitUI.NavigationBarConfigurator<Leading, Center, Trailing, LargeTrailing>.UIViewControllerType, context: PSPDFKitUI.NavigationBarConfigurator<Leading, Center, Trailing, LargeTrailing>.Context)
+  @usableFromInline
+  internal static func dismantleUIViewController(_ uiViewController: PSPDFKitUI.NavigationBarConfigurator<Leading, Center, Trailing, LargeTrailing>.UIViewControllerType, coordinator: Swift.Void)
+  @usableFromInline
+  internal typealias Coordinator = Swift.Void
+  @usableFromInline
+  internal typealias Body = Swift.Never
+}
+extension View {
+  @inlinable public func navigationBarItems<Leading, Center, Trailing>(leading: Leading, center: Center, trailing: Trailing, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode? = .automatic) -> some SwiftUI.View where Leading : SwiftUI.View, Center : SwiftUI.View, Trailing : SwiftUI.View {
+        background(
+            NavigationBarConfigurator(
+                leading: leading,
+                center: center,
+                trailing: trailing,
+                largeTrailing: EmptyView(),
+                displayMode: displayMode
+            )
+        )
+    }
+  
+  @available(tvOS, unavailable)
+  public func navigationBarLargeTitleItems<Trailing>(trailing: Trailing, alignment: SwiftUI.VerticalAlignment? = nil, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode? = .large) -> some SwiftUI.View where Trailing : SwiftUI.View
+  
+  @inlinable public func navigationBarItems<Leading, Center>(leading: Leading, center: Center, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode = .automatic) -> some SwiftUI.View where Leading : SwiftUI.View, Center : SwiftUI.View {
+        navigationBarItems(
+            leading: leading,
+            center: center,
+            trailing: EmptyView(),
+            displayMode: displayMode
+        )
+    }
+  
+  @inlinable public func navigationBarTitleView<V>(_ center: V, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -> some SwiftUI.View where V : SwiftUI.View {
+        navigationBarItems(
+            leading: EmptyView(),
+            center: center,
+            trailing: EmptyView(),
+            displayMode: displayMode
+        )
+    }
+  
+  @inlinable public func navigationBarTitleView<V>(_ center: V) -> some SwiftUI.View where V : SwiftUI.View {
+        navigationBarItems(
+            leading: EmptyView(),
+            center: center,
+            trailing: EmptyView(),
+            displayMode: .automatic
+        )
+    }
+  
+  @inlinable public func navigationBarItems<Center, Trailing>(center: Center, trailing: Trailing, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode = .automatic) -> some SwiftUI.View where Center : SwiftUI.View, Trailing : SwiftUI.View {
+        navigationBarItems(
+            leading: EmptyView(),
+            center: center,
+            trailing: trailing,
+            displayMode: displayMode
+        )
+    }
+  
+}
+extension DocumentSharingConfiguration {
+  @frozen public enum SelectedPages {
+    case current(currentPageIndex: PSPDFKit.PageIndex, document: PSPDFKit.Document)
+    case range(selectedPageIndexes: Foundation.IndexSet, document: PSPDFKit.Document)
+    case all(documents: [PSPDFKit.Document])
+    case annotated(documents: [PSPDFKit.Document])
+  }
+  public var selectedPagesDescriptionProvider: (PSPDFKitUI.DocumentSharingConfiguration.SelectedPages) -> Swift.String {
+    get
+  }
+}
+extension DocumentSharingConfigurationBuilder {
+  public var selectedPagesDescriptionProvider: (PSPDFKitUI.DocumentSharingConfiguration.SelectedPages) -> Swift.String {
+    get
+    set
+  }
+}
+extension SignatureCreationViewController.Mode : Swift.Identifiable {
+  public var id: PSPDFKitUI.SignatureCreationViewController.Mode {
+    get
+  }
+  public typealias ID = PSPDFKitUI.SignatureCreationViewController.Mode
+}
+extension UIHostingController {
+  convenience public init(rootView: Content, largeTitleDisplayMode: UIKit.UINavigationItem.LargeTitleDisplayMode)
+}
+@available(*, deprecated, renamed: "SpeechController.Option.autoDetectLanguage", message: "Deprecated in PSPDFKit 9.4 for iOS.")
+public let PSPDFSpeechSynthesizerAutoDetectLanguage: PSPDFKitUI.SpeechController.Option
+@available(*, deprecated, renamed: "SpeechController.Option.language", message: "Deprecated in PSPDFKit 9.4 for iOS and.")
+public let PSPDFSpeechSynthesizerLanguageKey: PSPDFKitUI.SpeechController.Option
+@available(*, deprecated, renamed: "SpeechController.Option.languageHint", message: "Deprecated in PSPDFKit 9.4 for iOS.")
+public let PSPDFSpeechSynthesizerLanguageHintKey: PSPDFKitUI.SpeechController.Option
+open class StandaloneDelegate<DelegateType> : ObjectiveC.NSObject where DelegateType : ObjectiveC.NSObjectProtocol {
+  @discardableResult
+  public init(delegateTarget: Swift.AnyObject, originalDelegate: DelegateType? = nil)
+  @objc override dynamic open func forwardingTarget(for aSelector: ObjectiveC.Selector!) -> Any?
+  @objc override dynamic open func responds(to aSelector: ObjectiveC.Selector!) -> Swift.Bool
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension PDFViewController {
+  convenience public init(document: PSPDFKit.Document? = nil, delegate: PSPDFKitUI.PDFViewControllerDelegate? = nil, configurationBuilder builder: ((PSPDFKitUI.PDFConfigurationBuilder) -> Swift.Void) = { _ in })
+}
+extension PDFViewController {
+  public struct PageIndexChangeEvent {
+    public let pageIndex: PSPDFKit.PageIndex
+    public let oldPageIndex: PSPDFKit.PageIndex
+    public let reason: PSPDFKitUI.PDFViewController.PageIndexChangeEvent.Reason
+    @frozen public enum Reason {
+      case programmatically
+      case userInterface
+      public static func == (a: PSPDFKitUI.PDFViewController.PageIndexChangeEvent.Reason, b: PSPDFKitUI.PDFViewController.PageIndexChangeEvent.Reason) -> Swift.Bool
+      public var hashValue: Swift.Int {
+        get
+      }
+      public func hash(into hasher: inout Swift.Hasher)
+    }
+  }
+  public var pageIndexPublisher: Combine.AnyPublisher<PSPDFKitUI.PDFViewController.PageIndexChangeEvent, Swift.Never> {
+    get
+  }
+  public var documentPublisher: Combine.AnyPublisher<PSPDFKit.Document, Swift.Never> {
+    get
+  }
+}
+extension DrawView {
+  public var pointSequences: [[PSPDFKit.DrawingPoint]] {
+    get
+  }
+}
+@available(OSX 10.15, iOS 13.0, *)
+extension DrawView {
+  public var pointSequencesPublisher: Combine.AnyPublisher<[[PSPDFKit.DrawingPoint]], Swift.Never> {
+    get
+  }
+}
+public protocol KeyPathReferenceWritable {
+  associatedtype TypeIn
+  associatedtype TypeOut
+  func set<Value>(_ keyPath: Swift.ReferenceWritableKeyPath<Self.TypeIn, Value>, to value: Value) -> Self.TypeOut
+}
+extension KeyPathReferenceWritable {
+  public func set<Value>(_ keyPath: Swift.ReferenceWritableKeyPath<Self, Value>, to value: Value) -> Self
+}
+extension NSObject : PSPDFKitUI.KeyPathReferenceWritable {
+  public typealias TypeIn = ObjectiveC.NSObject
+  public typealias TypeOut = ObjectiveC.NSObject
+}
+@objc(PSPDFSignatureCreationViewControllerDelegate) public protocol SignatureCreationViewControllerDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func signatureCreationViewControllerDidCancel(_ signatureController: PSPDFKitUI.SignatureCreationViewController)
+  @objc(signatureCreationViewControllerDidFinish:) func signatureCreationViewControllerDidFinish(_ signatureController: PSPDFKitUI.SignatureCreationViewController)
+}
+@_inheritsConvenienceInitializers @objc(PSPDFSignatureCreationViewController) open class SignatureCreationViewController : UIKit.UIViewController, PSPDFKit.Overridable {
+  public var configuration: PSPDFKitUI.SignatureCreationViewController.Configuration {
+    get
+    set
+  }
+  @objc weak public var delegate: PSPDFKitUI.SignatureCreationViewControllerDelegate?
+  @objc public var drawView: PSPDFKitUI.DrawView {
+    @objc get
+  }
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic public func loadView()
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public var isModalInPresentation: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+extension PDFView {
+  public func updateConfiguration(builder builderBlock: @escaping (PSPDFKitUI.PDFConfigurationBuilder) -> Swift.Void) -> PSPDFKitUI.PDFView
+  public func updateControllerConfiguration(block: @escaping (PSPDFKitUI.PDFViewController) -> Swift.Void) -> PSPDFKitUI.PDFView
+}
+extension PDFView {
+  public func pageMode(_ pageMode: PSPDFKitUI.PageMode) -> PSPDFKitUI.PDFView
+  public func pageTransition(_ pageTransition: PSPDFKitUI.PageTransition) -> PSPDFKitUI.PDFView
+  public func firstPageAlwaysSingle(_ firstPageAlwaysSingle: Swift.Bool) -> PSPDFKitUI.PDFView
+  public func spreadFitting(_ spreadFitting: PSPDFKitUI.PDFConfiguration.SpreadFitting) -> PSPDFKitUI.PDFView
+  public func backgroundColor(_ backgroundColor: UIKit.UIColor) -> PSPDFKitUI.PDFView
+  public func scrollDirection(_ scrollDirection: PSPDFKitUI.ScrollDirection) -> PSPDFKitUI.PDFView
+  public func minimumZoomScale(_ minimumZoomScale: Swift.Float) -> PSPDFKitUI.PDFView
+  public func maximumZoomScale(_ maximumZoomScale: Swift.Float) -> PSPDFKitUI.PDFView
+  public func linkAction(_ linkAction: PSPDFKitUI.LinkAction) -> PSPDFKitUI.PDFView
+  public func allowedMenuActions(_ allowedMenuActions: PSPDFKitUI.TextSelectionMenuAction) -> PSPDFKitUI.PDFView
+  public func textSelectionEnabled(_ textSelectionEnabled: Swift.Bool) -> PSPDFKitUI.PDFView
+  public func imageSelectionEnabled(_ imageSelectionEnabled: Swift.Bool) -> PSPDFKitUI.PDFView
+  public func editableAnnotationTypes(_ editableAnnotationTypes: Swift.Set<PSPDFKit.Annotation.Tool>) -> PSPDFKitUI.PDFView
+  public func userInterfaceViewMode(_ userInterfaceViewMode: PSPDFKitUI.UserInterfaceViewMode) -> PSPDFKitUI.PDFView
+  public func pageLabelEnabled(_ pageLabelEnabled: Swift.Bool) -> PSPDFKitUI.PDFView
+  public func documentLabelEnabled(_ documentLabelEnabled: PSPDFKitUI.AdaptiveConditional) -> PSPDFKitUI.PDFView
+  public func shouldHideUserInterfaceOnPageChange(_ shouldHideUserInterfaceOnPageChange: Swift.Bool) -> PSPDFKitUI.PDFView
+  @available(*, deprecated, message: "Deprecated in PSPDFKit 10.5 for iOS because the scroll indicator from `UIScrollView` supports dragging on iOS 13 and later.")
+  public func pageGrabberEnabled(_ pageGrabberEnabled: Swift.Bool) -> PSPDFKitUI.PDFView
+  public func shouldHideStatusBarWithUserInterface(_ shouldHideStatusBarWithUserInterface: Swift.Bool) -> PSPDFKitUI.PDFView
+  public func shouldShowRedactionInfoButton(_ shouldShowRedactionInfoButton: Swift.Bool) -> PSPDFKitUI.PDFView
+  public func redactionUsageHintEnabled(_ redactionUsageHintEnabled: Swift.Bool) -> PSPDFKitUI.PDFView
+  public func showBackActionButton(_ showBackActionButton: Swift.Bool) -> PSPDFKitUI.PDFView
+  public func showForwardActionButton(_ showForwardActionButton: Swift.Bool) -> PSPDFKitUI.PDFView
+  public func showBackForwardActionButtonLabels(_ showBackForwardActionButtonLabels: Swift.Bool) -> PSPDFKitUI.PDFView
+  public func thumbnailBarMode(_ thumbnailBarMode: PSPDFKitUI.ThumbnailBarMode) -> PSPDFKitUI.PDFView
+  public func scrubberBarType(_ scrubberBarType: PSPDFKitUI.ScrubberBarType) -> PSPDFKitUI.PDFView
+  public func shouldAskForAnnotationUsername(_ shouldAskForAnnotationUsername: Swift.Bool) -> PSPDFKitUI.PDFView
+  public func autosaveEnabled(_ autosaveEnabled: Swift.Bool) -> PSPDFKitUI.PDFView
+  public func useParentNavigationBar(_ useParentNavigationBar: Swift.Bool) -> PSPDFKitUI.PDFView
+}
+extension UIAlertAction {
+}
+extension PSPDFKitUI.SignatureCreationViewController.Mode : Swift.Equatable {}
+extension PSPDFKitUI.SignatureCreationViewController.Mode : Swift.Hashable {}
+extension PSPDFKitUI.SignatureCreationViewController.Mode : Swift.RawRepresentable {}
+extension PSPDFKitUI.PDFViewController.PageIndexChangeEvent.Reason : Swift.Equatable {}
+extension PSPDFKitUI.PDFViewController.PageIndexChangeEvent.Reason : Swift.Hashable {}

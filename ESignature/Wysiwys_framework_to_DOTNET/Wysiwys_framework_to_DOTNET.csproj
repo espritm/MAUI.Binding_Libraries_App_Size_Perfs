@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-ios</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <IsBindingProject>true</IsBindingProject>
+    <NoBindingEmbedding>true</NoBindingEmbedding>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="NativReferencesFiles\" />
+    <None Remove="NativReferencesFiles\sense-smartcontract-sdk-wysiwys-ios.framework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NativReferencesFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <NativeReference Include="NativReferencesFiles\sense-smartcontract-sdk-wysiwys-ios.framework">
+      <Kind>Framework</Kind>
+      <ForceLoad>True</ForceLoad>
+      <Frameworks>Foundation UIKit</Frameworks>
+    </NativeReference>
+    <NativeReference Include="NativReferencesFiles\Realm.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+    <NativeReference Include="NativReferencesFiles\PSPDFKit.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+    <NativeReference Include="NativReferencesFiles\PSPDFKitUI.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+  </ItemGroup>
+</Project>

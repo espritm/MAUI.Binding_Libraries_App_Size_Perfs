@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-ios</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <IsBindingProject>true</IsBindingProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="NativReferencesFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NativReferencesFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <NativeReference Include="NativReferencesFiles\UnbluCoreSDK.xcframework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+      <Frameworks>Foundation</Frameworks>
+    </NativeReference>
+    <NativeReference Include="NativReferencesFiles\UnbluCallModule.xcframework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+      <Frameworks>Foundation</Frameworks>
+    </NativeReference>
+    <NativeReference Include="NativReferencesFiles\UnbluMobileCoBrowsingModule.xcframework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+      <Frameworks>Foundation</Frameworks>
+    </NativeReference>
+    <NativeReference Include="NativReferencesFiles\UnbluProxy.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+      <Frameworks>Foundation</Frameworks>
+    </NativeReference>
+  </ItemGroup>
+</Project>

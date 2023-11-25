@@ -1,0 +1,11 @@
+framework module UnbluCallModule {
+  umbrella header "UnbluCallModule.h"
+
+  export *
+  module * { export * }
+}
+
+module UnbluCallModule.Swift {
+    header "UnbluCallModule-Swift.h"
+    requires objc
+}

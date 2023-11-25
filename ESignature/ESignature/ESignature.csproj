@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net7.0;net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Authors>UBP</Authors>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">31.0</SupportedOSPlatformVersion>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="'$(TargetFramework)'=='net7.0-ios'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Interfaces\" />
+	  <None Remove="Implementations\" />
+	  <None Remove="Interfaces\Internals\" />
+	  <None Remove="Platforms\Android\" />
+	  <None Remove="Platforms\MacCatalyst\" />
+	  <None Remove="Model\" />
+	  <None Remove="Implementations\Internals\" />
+	  <None Remove="NativeReferencesFiles\iOS\SmartContract_framework_to_DOTNET.resources\.DS_Store" />
+	  <None Remove="Views\" />
+	  <None Remove="Implementations\Internals\Dotnet\" />
+	  <None Remove="EventArguments\" />
+	  <None Remove="Platforms\Android\Callbacks\" />
+	  <None Remove="Platforms\Android\Resources\" />
+	  <None Remove="Platforms\Android\Resources\layout\" />
+	  <None Remove="Platforms\Android\Resources\layout\esignature_view_to_inflate.xml" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Interfaces\" />
+	  <Folder Include="Implementations\" />
+	  <Folder Include="Interfaces\Internals\" />
+	  <Folder Include="Platforms\Android\" />
+	  <Folder Include="Platforms\MacCatalyst\" />
+	  <Folder Include="Model\" />
+	  <Folder Include="Implementations\Internals\" />
+	  <Folder Include="Views\" />
+	  <Folder Include="Implementations\Internals\Dotnet\" />
+	  <Folder Include="EventArguments\" />
+	  <Folder Include="Platforms\Android\Callbacks\" />
+	  <Folder Include="Platforms\Android\Resources\" />
+	  <Folder Include="Platforms\Android\Resources\layout\" />
+	</ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='net7.0-ios'">
+	  <ProjectReference Include="..\SmartContract_xcframework_to_DOTNET\SmartContract_xcframework_to_DOTNET.csproj">
+	    <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
+	  </ProjectReference>
+		<ProjectReference Include="..\Wysiwys_framework_to_DOTNET\Wysiwys_framework_to_DOTNET.csproj">
+	    <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
+	  </ProjectReference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='net7.0-android'">
+	  <ProjectReference Include="..\Sense-AAR-to-DONET\Sense-AAR-to-DONET.csproj">
+	    <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
+	  </ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+    <PackageReference Condition="'$(TargetFramework)' == 'net7.0-android'" Include="Xamarin.Google.Android.Material" Version="1.7.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+	  <AndroidResource Include="Platforms\Android\Resources\layout\esignature_view_to_inflate.xml" />
+	</ItemGroup>
+</Project>

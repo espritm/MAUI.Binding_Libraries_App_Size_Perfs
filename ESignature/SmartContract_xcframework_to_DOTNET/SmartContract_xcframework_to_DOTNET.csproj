@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-ios</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <IsBindingProject>true</IsBindingProject>
+    <NoBindingEmbedding>true</NoBindingEmbedding>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="NativReferencesFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NativReferencesFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <NativeReference Include="NativReferencesFiles\SENSESmartContract.xcframework">
+      <Kind>Static</Kind>
+      <ForceLoad>True</ForceLoad>
+      <Frameworks>Foundation UIKit WebKit SystemConfiguration Security CFNetwork</Frameworks>
+      <SmartLink>False</SmartLink>
+      <LinkerFlags>-fprofile-instr-generate</LinkerFlags>
+    <NoBindingEmbedding>true</NoBindingEmbedding>
+    </NativeReference>
+  </ItemGroup>
+</Project>

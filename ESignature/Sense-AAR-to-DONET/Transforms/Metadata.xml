@@ -1,0 +1,377 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+ # 145
+ X: 294
+ Y: 355
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <!-- To bind sense-sdk-android-lib-3.28.0.aar -->
+
+  <!-- https://github.com/xamarin/java.interop/issues/1154 -->
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser']/class[@name='SettableBeanProperty']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser']/class[@name='PropertyWriter']" />
+
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind']/class[@name='Module']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.base']/class[@name='GeneratorBase']/method[@name='flush' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.base']/class[@name='ParserBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.base']/class[@name='ParserMinimalBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.exc']/class[@name='InputCoercionException']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core']/class[@name='JsonGenerationException']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.type']/class[@name='SimpleType']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.type']/class[@name='ResolvedRecursiveType']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.type']/class[@name='PlaceholderForType']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.type']/class[@name='MapLikeType']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.type']/class[@name='CollectionLikeType']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.type']/class[@name='ClassKey']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.type']/class[@name='ArrayType']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind']/class[@name='SerializerProvider']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind']/class[@name='SerializationConfig']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='UUIDSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='ToStringSerializerBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='ToStringSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='TokenBufferSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='ToEmptyObjectSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='TimeZoneSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='StringSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='StdScalarSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='StdKeySerializers']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='StdDelegatingSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='StdArraySerializers']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='StaticListSerializerBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='SqlTimeSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='SqlDateSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='SerializableSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='ReferenceTypeSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='RawSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='ObjectArraySerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='NumberSerializers']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='NullSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='NonTypedScalarSerializerBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='MapSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='JsonValueSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='IterableSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='InetSocketAddressSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='InetAddressSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='FileSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='EnumSetSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='EnumSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='DateTimeSerializerBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='DateSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='CollectionSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='ClassSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='CalendarSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='ByteBufferSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='ByteArraySerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='BooleanSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='AtomicReferenceSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.std']/class[@name='AsArraySerializerBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.impl']/class[@name='UnwrappingBeanSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.impl']/class[@name='UnsupportedTypeSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.impl']/class[@name='StringCollectionSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.impl']/class[@name='StringArraySerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.impl']/class[@name='MapEntrySerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.impl']/class[@name='IteratorSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.impl']/class[@name='IndexedStringListSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.impl']/class[@name='IndexedListSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.impl']/class[@name='FailingSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser.impl']/class[@name='BeanAsArraySerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser']/class[@name='DefaultSerializerProvider']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser']/class[@name='ContainerSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser']/class[@name='BeanSerializerFactory']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser']/class[@name='BeanSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ser']/class[@name='BasicSerializerFactory']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind']/class[@name='ObjectReader']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind']/class[@name='ObjectMapper']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='ValueNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='TreeTraversingParser']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='TextNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='ShortNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='POJONode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='NumericNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='NullNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='MissingNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='LongNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='JsonNodeFactory']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='IntNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='FloatNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='DoubleNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='DecimalNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='ContainerNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='BooleanNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='BinaryNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='BigIntegerNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='BaseJsonNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.node']/class[@name='ArrayNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.module']/class[@name='SimpleModule']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind']/class[@name='Module']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind']/class[@name='MappingIterator']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.jsontype.impl']/class[@name='TypeDeserializerBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.jsontype.impl']/class[@name='AsWrapperTypeSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.jsontype.impl']/class[@name='AsWrapperTypeDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.jsontype.impl']/class[@name='AsExternalTypeSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.jsontype.impl']/class[@name='AsArrayTypeSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.jsontype.impl']/class[@name='AsArrayTypeDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind']/class[@name='JsonNode']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind']/class[@name='JavaType']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.introspect']/class[@name='VirtualAnnotatedMember']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.introspect']/class[@name='SimpleMixInResolver']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.introspect']/class[@name='POJOPropertyBuilder']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.introspect']/class[@name='ConcreteBeanPropertyBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.introspect']/class[@name='BasicClassIntrospector']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.introspect']/class[@name='AnnotatedParameter']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.introspect']/class[@name='AnnotatedMethod']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.introspect']/class[@name='AnnotatedField']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.introspect']/class[@name='AnnotatedConstructor']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.introspect']/class[@name='AnnotatedClass']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ext']/class[@name='SqlBlobSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ext']/class[@name='NioPathSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ext']/class[@name='NioPathDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ext']/class[@name='DOMSerializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ext']/class[@name='DOMDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.ext']/class[@name='CoreXMLSerializers']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.exc']/class[@name='PropertyBindingException']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind']/class[@name='DeserializationContext']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind']/class[@name='DeserializationConfig']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='UUIDDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='TokenBufferDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='StringDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='StringCollectionDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='StringArrayDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='StackTraceElementDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='ObjectArrayDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='NumberDeserializers']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='MapEntryDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='MapDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='JsonNodeDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='EnumSetDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='EnumMapDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='DateDeserializers']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='CollectionDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='ByteBufferDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='AtomicReferenceDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='AtomicLongDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='AtomicIntegerDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser.std']/class[@name='AtomicBooleanDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser']/class[@name='DefaultDeserializationContext']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser']/class[@name='DataFormatReaders']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser']/class[@name='BeanDeserializerFactory']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.deser']/class[@name='BeanDeserializer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.cfg']/class[@name='MapperConfigBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core']/class[@name='Version']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.sym']/class[@name='Name']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.sym']/class[@name='CharsToNameCanonicalizer']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core']/class[@name='ObjectCodec']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core']/class[@name='JsonParseException']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core']/class[@name='JsonGenerationException']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core']/class[@name='JsonFactory']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.json']/class[@name='WriterBasedJsonGenerator']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.json']/class[@name='UTF8StreamJsonParser']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.json']/class[@name='UTF8JsonGenerator']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.json']/class[@name='UTF8DataInputJsonParser']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.json']/class[@name='ReaderBasedJsonParser']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.json']/class[@name='JsonGeneratorImpl']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.json.async']/class[@name='NonBlockingJsonParserBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.json.async']/class[@name='NonBlockingJsonParser']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.exc']/class[@name='InputCoercionException']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.base']/class[@name='ParserMinimalBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.base']/class[@name='ParserBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.core.base']/class[@name='GeneratorBase']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.util']/class[@name='ArrayBuilders']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.util']/class[@name='ClassUtil']" />
+  <remove-node path="/api/package[@name='ch.sysmosoft.shaded.com.fasterxml.jackson.databind.util']/class[@name='PrimitiveArrayBuilder']" />
+
+  <attr path="/api/package[@name='ch.sysmosoft.sense.common.model']/class[@name='DeviceInformation.Name']/field[@name='Name']"
+        name="name">DeviceName</attr>
+
+  <attr path="/api/package[@name='ch.sysmosoft.sense.common.model']/class[@name='DeviceInformation.Name']/field[@name='Name']"
+        name="name">DeviceName</attr>
+
+  <attr path="/api/package[@name='ch.sysmosoft.sense.android.core.service']/interface[@name='Sense.SessionServiceLifecycleListener']/method[@name='onServiceConnected' and count(parameter)=1 and parameter[1][@type='ch.sysmosoft.sense.android.core.service.Sense.SessionService']]/parameter[@name='p0']"
+        name="managedName">sessionService</attr>
+
+  <!-- End sense-sdk-android-lib-3.28.0.aar --> 
+
+  <!-- Start SQLCipher -->
+  
+  <attr path="/api/package[@name='net.sqlcipher']/class[@name='AbstractCursor']/method[@name='getWindow' and count(parameter)=0]" name="managedReturn">Android.Database.CursorWindow</attr>
+  <remove-node  path="/api/package[@name='net.sqlcipher']/interface[@name='Cursor']/method[@name='getType' and count(parameter)=1 and parameter[1][@type='int']]"></remove-node>
+  <attr path="/api/package[@name='ch.sysmosoft.sense.android.core.service.context']/class[@name='SQLiteOpenHelper']/method[@name='onCreate' and count(parameter)=1 and parameter[1][@type='net.sqlcipher.database.SQLiteDatabase']]"
+      name="name">OoncCreate</attr> <!-- not sur at all -->
+  <attr path="/api/package[@name='ch.sysmosoft.sense.android.core.service.context']/class[@name='SQLiteOpenHelper']/method[@name='onUpgrade' and count(parameter)=3 and parameter[1][@type='net.sqlcipher.database.SQLiteDatabase'] and parameter[2][@type='int'] and parameter[3][@type='int']]"
+      name="name">OonuUpgrade</attr> <!-- not sur at all -->
+  <!-- End SQLCipher -->
+  
+  <!-- Start PSPDFKit -->
+  
+  <remove-node path="/api/package[@name='com.pspdfkit.bookmarks']/class[@name='Bookmark']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations']/class[@name='LineAnnotation']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.datastructures']/class[@name='Range']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.datastructures']/class[@name='TextBlock']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations']/class[@name='PolylineAnnotation']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='FileAnnotationConfiguration']/method[@name='builder' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='InkAnnotationConfiguration']/method[@name='builder' and count(parameter)=1 and parameter[1][@type='android.content.Context']]" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='MarkupAnnotationConfiguration']/method[@name='builder' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.pspdfkit.ui.special_mode.controller.AnnotationTool']]" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='NoteAnnotationConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='LineAnnotationConfiguration']/method[@name='builder' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.pspdfkit.annotations.AnnotationType']]" />
+  <remove-node path="/api/package[@name='com.pspdfkit.forms']/class[@name='CheckBoxFormConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.forms']/class[@name='ComboBoxFormConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.forms']/class[@name='ListBoxFormConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.document.image']/class[@name='GalleryImagePickerFragment']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.forms']/class[@name='PushButtonFormConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.forms']/class[@name='RadioButtonFormConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.forms']/class[@name='SignatureFormConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.listeners']/interface[@name='LocalizationListener']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.document.search']/class[@name='SearchResult']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.forms']/class[@name='TextFormConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.listeners']/interface[@name='LocalizationListener']" />
+  <remove-node path="/api/package[@name='com.pspdfkit']/class[@name='PSPDFKit']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='FreeTextAnnotationConfiguration']/method[@name='builder' and count(parameter)=1 and parameter[1][@type='android.content.Context']]" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='InkAnnotationConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='FileAnnotationConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='LineAnnotationConfiguration']/method[@name='builder' and count(parameter)=1 and parameter[1][@type='android.content.Context']]" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='MarkupAnnotationConfiguration']/method[@name='builder' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.pspdfkit.annotations.AnnotationType']]" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='ShapeAnnotationConfiguration']/method[@name='builder' and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.pspdfkit.annotations.AnnotationType']]" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='StampAnnotationConfiguration']/method[@name='builder' and count(parameter)=1 and parameter[1][@type='android.content.Context']]" />
+  <remove-node path="/api/package[@name='com.pspdfkit.utils']/class[@name='PageRect']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.utils']/class[@name='Size']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='RedactionAnnotationConfiguration']/method[@name='builder' and count(parameter)=1 and parameter[1][@type='android.content.Context']]" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='RedactionAnnotationConfiguration']/method[@name='builder' and count(parameter)=1 and parameter[1][@type='android.content.Context']]" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='SoundAnnotationConfiguration']/method[@name='builder' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='EraserToolConfiguration']/method[@name='builder' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='com.pspdfkit.signatures.signers']/class[@name='MemorySigner']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.signatures.signers']/class[@name='Pkcs12Signer']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.ui']/class[@name='PdfActivityIntentBuilder']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.ui']/class[@name='PdfUiFragmentBuilder']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.ui']/class[@name='PdfThumbnailGrid']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.ui.toolbar']/class[@name='AnnotationCreationToolbar']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.ui.toolbar']/class[@name='TextSelectionToolbar']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='EraserToolConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='FreeTextAnnotationConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='RedactionAnnotationConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='ShapeAnnotationConfiguration.Builder']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='LineAnnotationConfiguration.Builder']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='MarkupAnnotationConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='StampAnnotationConfiguration.Builder']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.ui.toolbar']/class[@name='AnnotationEditingToolbar']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.ui.toolbar']/class[@name='DocumentEditingToolbar']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='SoundAnnotationConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='ShapeAnnotationConfiguration']" />
+  <remove-node path="/api/package[@name='com.pspdfkit.annotations.configuration']/interface[@name='LineAnnotationConfiguration']" />
+  <!-- End PSPDFKit -->
+
+
+  <!-- httpcore -->
+  <remove-node path="/api/package[@name='org.apache.http.entity']/class[@name='BasicHttpEntity']/method[@name='setContent' and count(parameter)=1 and parameter[1][@type='java.io.InputStream']]" />
+  <remove-node path="/api/package[@name='org.apache.http.entity']/class[@name='BasicHttpEntity']/method[@name='getContentLength' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='org.apache.http.impl.io']/class[@name='DefaultHttpRequestParser']" />
+  <remove-node path="/api/package[@name='org.apache.http.impl.io']/class[@name='DefaultHttpRequestWriter']" />
+  <remove-node path="/api/package[@name='org.apache.http.impl.io']/class[@name='DefaultHttpResponseParser']" />
+  <remove-node path="/api/package[@name='org.apache.http.impl.io']/class[@name='DefaultHttpResponseWriter']" />
+  <remove-node path="/api/package[@name='org.apache.http.impl.io']/class[@name='HttpRequestParser']/method[@name='parseHead' and count(parameter)=1 and parameter[1][@type='org.apache.http.io.SessionInputBuffer']]" />
+  <remove-node path="/api/package[@name='org.apache.http.impl.io']/class[@name='HttpRequestWriter']" />
+  <remove-node path="/api/package[@name='org.apache.http.impl.io']/class[@name='HttpResponseParser']/method[@name='parseHead' and count(parameter)=1 and parameter[1][@type='org.apache.http.io.SessionInputBuffer']]" />
+  <remove-node path="/api/package[@name='org.apache.http.impl.io']/class[@name='HttpResponseWriter']" />
+  <remove-node path="/api/package[@name='org.apache.http.impl.pool']/class[@name='BasicConnPool']" />
+  <remove-node path="/api/package[@name='org.apache.http.util']/class[@name='Args']/method[@name='containsNoBlanks' and count(parameter)=2 and parameter[1][@type='T'] and parameter[2][@type='java.lang.String']]" />
+  <remove-node path="/api/package[@name='org.apache.http.util']/class[@name='Args']/method[@name='notBlank' and count(parameter)=2 and parameter[1][@type='T'] and parameter[2][@type='java.lang.String']]" />
+  <remove-node path="/api/package[@name='org.apache.http.util']/class[@name='Args']/method[@name='notEmpty' and count(parameter)=2 and parameter[1][@type='T'] and parameter[2][@type='java.lang.String']]" />
+  <remove-node path="/api/package[@name='org.apache.http.util']/class[@name='Args']/method[@name='notEmpty' and count(parameter)=2 and parameter[1][@type='T'] and parameter[2][@type='java.lang.String']]" />
+  <remove-node path="/api/package[@name='org.apache.http.entity']/class[@name='BasicHttpEntity']" />
+  <remove-node path="/api/package[@name='org.apache.http.impl.io']/class[@name='HttpRequestParser']" />
+  <remove-node path="/api/package[@name='org.apache.http.impl.io']/class[@name='HttpResponseParser']" />
+  <!-- End httpcore -->
+
+
+  <!-- jackson fasterxml -->
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.databind']" />
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.core.base']" />
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.databind.deser']" />
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.core.json']" />
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.databind.ext']" />
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.databind.introspect']" />
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.core.sym']" />
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.databind.introspect']" />
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.core']" />
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.databind.type']" />
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.databind.util']" />
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.databind.ser.std']" />
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.databind.util']" />
+  <!-- End jackson fasterxml -->
+
+  <!-- portlet-api-2.0 -->
+  <remove-node path="/api/package[@name='javax.portlet.filter']" />
+  <remove-node path="/api/package[@name='javax.portlet']" />
+  <!-- End portlet-api-2.0-->
+
+  <!-- prov-1.58.0.0 -->
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce.provider.asymmetric']" />
+  <remove-node path="/api/package[@name='org.spongycastle.pqc.jcajce.provider']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce.provider.asymmetric.dh']" />
+  <remove-node path="/api/package[@name='org.spongycastle.pqc.jcajce.provider.mceliece']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce.provider.asymmetric.dsa']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jce.provider']" />
+  <remove-node path="/api/package[@name='org.spongycastle.pqc.jcajce.provider.newhope']" />
+  <remove-node path="/api/package[@name='org.spongycastle.pqc.jcajce.provider.rainbow']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce.provider.digest']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce.provider.asymmetric.ec']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce.provider.asymmetric.util']" />
+  <remove-node path="/api/package[@name='org.spongycastle.pqc.jcajce.provider.sphincs']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jce.provider']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce.provider.asymmetric.ecgost12']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce.provider.keystore']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce.provider.asymmetric.gost']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jce.provider']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce.provider.asymmetric.rsa']" />
+  <remove-node path="/api/package[@name='org.spongycastle.pqc.jcajce.provider.util']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jce.provider']" />
+  <remove-node path="/api/package[@name='org.spongycastle.pqc.jcajce.provider.xmss']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce.provider.asymmetric.ies']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce.provider.asymmetric.x509']" />
+  <remove-node path="/api/package[@name='org.spongycastle.x509']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce.provider.symmetric.util']" />  
+  <!-- End prov-1.58.0.0 -->
+
+  <!-- pkix-1.54.0.0 -->
+  <remove-node path="/api/package[@name='org.spongycastle.cms']" />
+  <!-- End pkix-1.54.0.0 -->
+
+  <!-- core-1.58.0.0 -->
+  <remove-node path="/api/package[@name='org.spongycastle.crypto']" />
+  <remove-node path="/api/package[@name='org.spongycastle.jcajce']" />
+  <remove-node path="/api/package[@name='org.spongycastle.crypto.modes']" />
+  <remove-node path="/api/package[@name='org.spongycastle.crypto.tls']" />
+  <remove-node path="/api/package[@name='org.spongycastle.crypto.modes']" />
+  <remove-node path="/api/package[@name='org.spongycastle.pqc.crypto']" />
+  <remove-node path="/api/package[@name='org.spongycastle.crypto.modes']" />
+  <remove-node path="/api/package[@name='org.spongycastle.pqc.crypto.newhope']" />
+  <remove-node path="/api/package[@name='org.spongycastle.crypto.tls']" />
+  <remove-node path="/api/package[@name='org.spongycastle.pqc.crypto.xmss']" />
+  <!-- End core-1.58.0.0 -->
+
+  <!-- commons-lang-2.6 -->
+  <remove-node path="/api/package[@name='org.apache.commons.lang.builder']" />
+  <!-- End commons-lang-2.6 -->
+
+  <!-- commons-io-2.4 -->
+  <remove-node path="/api/package[@name='org.apache.commons.io.comparator']" />
+  <remove-node path="/api/package[@name='org.apache.commons.io.input']" />
+  <remove-node path="/api/package[@name='org.apache.commons.io']" />
+  <remove-node path="/api/package[@name='org.apache.commons.io.output']" />
+  <!-- End commons-io-2.4 -->
+
+  <!-- hamcrest -->
+  <remove-node path="/api/package[@name='org.hamcrest.core']" />
+  <remove-node path="/api/package[@name='org.hamcrest.internal']" />
+  <!-- End hamcrest -->
+  
+  <!-- jackson-dataformat-xml-2.9.8 -->
+  <remove-node path="/api/package[@name='com.fasterxml.jackson.dataformat.xml.deser']" />   
+  <!-- End jackson-dataformat-xml-2.9.8 -->
+
+</metadata>
+
+
