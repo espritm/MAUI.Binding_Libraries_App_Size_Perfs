@@ -1,0 +1,4 @@
+framework module SENSESmartContract {
+  umbrella header "../SENSESmartContract.h"
+  export *
+}

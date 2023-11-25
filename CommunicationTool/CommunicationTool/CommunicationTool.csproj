@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net7.0;net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Authors>UBP</Authors>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">31.0</SupportedOSPlatformVersion>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition="'$(TargetFramework)'=='net7.0-ios'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Platforms\iOS\" />
+	  <None Remove="Views\" />
+	  <None Remove="Implementations\" />
+	  <None Remove="Interfaces\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Platforms\iOS\" />
+	  <Folder Include="Views\" />
+	  <Folder Include="Implementations\" />
+	  <Folder Include="Interfaces\" />
+	</ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='net7.0-ios'">
+	  <ProjectReference Include="..\UnbluProxy_FatFramework_to_DOTNET\UnbluProxy_FatFramework_to_DOTNET.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='net7.0-android'">
+    <ProjectReference Include="..\Unblu-AAR-to-DOTNET\Unblu-AAR-to-DOTNET.csproj" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.7.0.1" />
+  </ItemGroup>
+</Project>

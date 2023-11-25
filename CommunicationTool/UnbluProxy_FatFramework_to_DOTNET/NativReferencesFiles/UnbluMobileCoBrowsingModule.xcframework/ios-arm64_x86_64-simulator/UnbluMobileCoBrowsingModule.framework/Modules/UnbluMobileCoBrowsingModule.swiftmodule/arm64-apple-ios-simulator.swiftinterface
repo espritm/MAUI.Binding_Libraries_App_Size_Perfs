@@ -1,0 +1,50 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UnbluMobileCoBrowsingModule
+import Combine
+import CommonCrypto
+import Foundation
+import Swift
+import UIKit
+import UnbluCoreSDK
+@_exported import UnbluMobileCoBrowsingModule
+import WebKit
+import _Concurrency
+@_hasMissingDesignatedInitializers public class UnbluMobileCoBrowsingModuleProvider {
+  public static func create(config: UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleConfiguration = UnbluMobileCoBrowsingModuleConfiguration()) -> UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleApi
+  @objc deinit
+}
+public protocol UnbluMobileCoBrowsingModuleApi : UnbluCoreSDK.UnbluModule {
+  var delegate: UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleDelegate? { get set }
+  var maxWindowCapturingLevel: UIKit.UIWindow.Level { get set }
+  var preferredStatusBarStyle: UIKit.UIStatusBarStyle { get set }
+  func isMobileCoBrowsingActive(success: @escaping (Swift.Bool) -> Swift.Void, failure: ((UnbluCoreSDK.UnbluIsMobileCoBrowsingActiveError) -> Swift.Void)?)
+  func stopMobileCoBrowsing(success: @escaping () -> Swift.Void, failure: ((UnbluCoreSDK.UnbluStopMobileCoBrowsingError) -> Swift.Void)?)
+  func addPrivateView(withTag tag: Swift.Int)
+  func removePrivateView(withTag tag: Swift.Int)
+  func addPrivateArea(withId id: Swift.String, x: CoreGraphics.CGFloat?, y: CoreGraphics.CGFloat?, width: CoreGraphics.CGFloat?, height: CoreGraphics.CGFloat?) -> UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingPrivateArea
+  func removePrivateArea(withId id: Swift.String)
+}
+extension UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleApi {
+  public func isMobileCoBrowsingActive(success: @escaping (Swift.Bool) -> Swift.Void, failure: ((UnbluCoreSDK.UnbluIsMobileCoBrowsingActiveError) -> Swift.Void)? = nil)
+  public func stopMobileCoBrowsing(success: @escaping () -> Swift.Void, failure: ((UnbluCoreSDK.UnbluStopMobileCoBrowsingError) -> Swift.Void)? = nil)
+}
+public protocol UnbluMobileCoBrowsingModuleDelegate : AnyObject {
+  func unbluMobileCoBrowsingModuleDidStartCoBrowsing(_ unbluMobileCoBrowsingModuleApi: UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleApi)
+  func unbluMobileCoBrowsingModuleDidStopCoBrowsing(_ unbluMobileCoBrowsingModuleApi: UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleApi)
+}
+extension UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleDelegate {
+  public func unbluMobileCoBrowsingModuleDidStartCoBrowsing(_ unbluMobileCoBrowsingModuleApi: UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleApi)
+  public func unbluMobileCoBrowsingModuleDidStopCoBrowsing(_ unbluMobileCoBrowsingModuleApi: UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleApi)
+}
+@_hasMissingDesignatedInitializers public class UnbluMobileCoBrowsingPrivateArea {
+  final public let id: Swift.String
+  public var rect: CoreGraphics.CGRect {
+    get
+  }
+  public func update(x: CoreGraphics.CGFloat? = nil, y: CoreGraphics.CGFloat? = nil, width: CoreGraphics.CGFloat? = nil, height: CoreGraphics.CGFloat? = nil)
+  @objc deinit
+}
+public struct UnbluMobileCoBrowsingModuleConfiguration {
+  public init(privateViews: Swift.Set<Swift.Int> = [], maxWindowCapturingLevel: UIKit.UIWindow.Level = .normal, enableCapturingPerformanceLogging: Swift.Bool = false, preferredStatusBarStyle: UIKit.UIStatusBarStyle = .default)
+}

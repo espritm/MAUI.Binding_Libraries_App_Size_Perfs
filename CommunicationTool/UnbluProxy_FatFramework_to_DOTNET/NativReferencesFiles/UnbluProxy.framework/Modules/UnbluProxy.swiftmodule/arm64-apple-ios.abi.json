@@ -1,0 +1,2935 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UnbluMobileCoBrowsingModule",
+        "printedName": "UnbluMobileCoBrowsingModule",
+        "declKind": "Import",
+        "moduleName": "UnbluProxy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UnbluCoreSDK",
+        "printedName": "UnbluCoreSDK",
+        "declKind": "Import",
+        "moduleName": "UnbluProxy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UnbluProxy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnbluProxy"
+      },
+      {
+        "kind": "Import",
+        "name": "UnbluCoreSDK",
+        "printedName": "UnbluCoreSDK",
+        "declKind": "Import",
+        "moduleName": "UnbluProxy"
+      },
+      {
+        "kind": "Import",
+        "name": "UnbluCallModule",
+        "printedName": "UnbluCallModule",
+        "declKind": "Import",
+        "moduleName": "UnbluProxy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UnbluMobileCoBrowsingModule",
+        "printedName": "UnbluMobileCoBrowsingModule",
+        "declKind": "Import",
+        "moduleName": "UnbluProxy",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnbluProxy",
+        "printedName": "UnbluProxy",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_UNREAD_MESSAGE_COUNT_CHANGED",
+            "printedName": "NOTIFICATION_NAME_UNREAD_MESSAGE_COUNT_CHANGED",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_UNREAD_MESSAGE_COUNT_CHANGED",
+            "mangledName": "$s10UnbluProxyAAC46NOTIFICATION_NAME_UNREAD_MESSAGE_COUNT_CHANGEDSSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_UNREAD_MESSAGE_COUNT_CHANGED",
+                "mangledName": "$s10UnbluProxyAAC46NOTIFICATION_NAME_UNREAD_MESSAGE_COUNT_CHANGEDSSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_DID_INITIALIZE",
+            "printedName": "NOTIFICATION_NAME_DID_INITIALIZE",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_DID_INITIALIZE",
+            "mangledName": "$s10UnbluProxyAAC32NOTIFICATION_NAME_DID_INITIALIZESSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_DID_INITIALIZE",
+                "mangledName": "$s10UnbluProxyAAC32NOTIFICATION_NAME_DID_INITIALIZESSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_DID_DEINITIALIZE",
+            "printedName": "NOTIFICATION_NAME_DID_DEINITIALIZE",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_DID_DEINITIALIZE",
+            "mangledName": "$s10UnbluProxyAAC34NOTIFICATION_NAME_DID_DEINITIALIZESSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_DID_DEINITIALIZE",
+                "mangledName": "$s10UnbluProxyAAC34NOTIFICATION_NAME_DID_DEINITIALIZESSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_UI_IS_READY",
+            "printedName": "NOTIFICATION_NAME_UI_IS_READY",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_UI_IS_READY",
+            "mangledName": "$s10UnbluProxyAAC29NOTIFICATION_NAME_UI_IS_READYSSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_UI_IS_READY",
+                "mangledName": "$s10UnbluProxyAAC29NOTIFICATION_NAME_UI_IS_READYSSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_DID_PRELOAD_UI",
+            "printedName": "NOTIFICATION_NAME_DID_PRELOAD_UI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_DID_PRELOAD_UI",
+            "mangledName": "$s10UnbluProxyAAC32NOTIFICATION_NAME_DID_PRELOAD_UISSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_DID_PRELOAD_UI",
+                "mangledName": "$s10UnbluProxyAAC32NOTIFICATION_NAME_DID_PRELOAD_UISSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_DID_TRANSITION_UI_WITH_TRANSITION",
+            "printedName": "NOTIFICATION_NAME_DID_TRANSITION_UI_WITH_TRANSITION",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_DID_TRANSITION_UI_WITH_TRANSITION",
+            "mangledName": "$s10UnbluProxyAAC041NOTIFICATION_NAME_DID_TRANSITION_UI_WITH_F0SSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_DID_TRANSITION_UI_WITH_TRANSITION",
+                "mangledName": "$s10UnbluProxyAAC041NOTIFICATION_NAME_DID_TRANSITION_UI_WITH_F0SSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_DID_UPDATE_PERSON_INFO",
+            "printedName": "NOTIFICATION_NAME_DID_UPDATE_PERSON_INFO",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_DID_UPDATE_PERSON_INFO",
+            "mangledName": "$s10UnbluProxyAAC40NOTIFICATION_NAME_DID_UPDATE_PERSON_INFOSSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_DID_UPDATE_PERSON_INFO",
+                "mangledName": "$s10UnbluProxyAAC40NOTIFICATION_NAME_DID_UPDATE_PERSON_INFOSSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_DID_CHANGE_OPEN_CONVERSATION",
+            "printedName": "NOTIFICATION_NAME_DID_CHANGE_OPEN_CONVERSATION",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_DID_CHANGE_OPEN_CONVERSATION",
+            "mangledName": "$s10UnbluProxyAAC46NOTIFICATION_NAME_DID_CHANGE_OPEN_CONVERSATIONSSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_DID_CHANGE_OPEN_CONVERSATION",
+                "mangledName": "$s10UnbluProxyAAC46NOTIFICATION_NAME_DID_CHANGE_OPEN_CONVERSATIONSSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_DID_REQUEST_HIDE_UI",
+            "printedName": "NOTIFICATION_NAME_DID_REQUEST_HIDE_UI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_DID_REQUEST_HIDE_UI",
+            "mangledName": "$s10UnbluProxyAAC37NOTIFICATION_NAME_DID_REQUEST_HIDE_UISSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_DID_REQUEST_HIDE_UI",
+                "mangledName": "$s10UnbluProxyAAC37NOTIFICATION_NAME_DID_REQUEST_HIDE_UISSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_DID_REQUEST_SHOW_UI",
+            "printedName": "NOTIFICATION_NAME_DID_REQUEST_SHOW_UI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_DID_REQUEST_SHOW_UI",
+            "mangledName": "$s10UnbluProxyAAC37NOTIFICATION_NAME_DID_REQUEST_SHOW_UISSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_DID_REQUEST_SHOW_UI",
+                "mangledName": "$s10UnbluProxyAAC37NOTIFICATION_NAME_DID_REQUEST_SHOW_UISSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_DID_TOGGLE_CALL_UI",
+            "printedName": "NOTIFICATION_NAME_DID_TOGGLE_CALL_UI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_DID_TOGGLE_CALL_UI",
+            "mangledName": "$s10UnbluProxyAAC36NOTIFICATION_NAME_DID_TOGGLE_CALL_UISSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_DID_TOGGLE_CALL_UI",
+                "mangledName": "$s10UnbluProxyAAC36NOTIFICATION_NAME_DID_TOGGLE_CALL_UISSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_DID_RECEIVED_ERROR",
+            "printedName": "NOTIFICATION_NAME_DID_RECEIVED_ERROR",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_DID_RECEIVED_ERROR",
+            "mangledName": "$s10UnbluProxyAAC36NOTIFICATION_NAME_DID_RECEIVED_ERRORSSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_DID_RECEIVED_ERROR",
+                "mangledName": "$s10UnbluProxyAAC36NOTIFICATION_NAME_DID_RECEIVED_ERRORSSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_DID_START_COBROWSING",
+            "printedName": "NOTIFICATION_NAME_DID_START_COBROWSING",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_DID_START_COBROWSING",
+            "mangledName": "$s10UnbluProxyAAC38NOTIFICATION_NAME_DID_START_COBROWSINGSSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_DID_START_COBROWSING",
+                "mangledName": "$s10UnbluProxyAAC38NOTIFICATION_NAME_DID_START_COBROWSINGSSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "NOTIFICATION_NAME_DID_STOP_COBROWSING",
+            "printedName": "NOTIFICATION_NAME_DID_STOP_COBROWSING",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cpy)NOTIFICATION_NAME_DID_STOP_COBROWSING",
+            "mangledName": "$s10UnbluProxyAAC37NOTIFICATION_NAME_DID_STOP_COBROWSINGSSvpZ",
+            "moduleName": "UnbluProxy",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(cm)NOTIFICATION_NAME_DID_STOP_COBROWSING",
+                "mangledName": "$s10UnbluProxyAAC37NOTIFICATION_NAME_DID_STOP_COBROWSINGSSvgZ",
+                "moduleName": "UnbluProxy",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnbluProxy",
+                "printedName": "UnbluProxy.UnbluProxy",
+                "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(im)init",
+            "mangledName": "$s10UnbluProxyAACABycfc",
+            "moduleName": "UnbluProxy",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "configureApi",
+            "printedName": "configureApi(cookiesInString:unbluUrlServer:unbluApiKey:enableUnbluDebugOutput:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(im)configureApiWithCookiesInString:unbluUrlServer:unbluApiKey:enableUnbluDebugOutput:",
+            "mangledName": "$s10UnbluProxyAAC12configureApi15cookiesInString14unbluUrlServer0hD3Key06enableA11DebugOutputSbSDyS2SG_S2SSbtF",
+            "moduleName": "UnbluProxy",
+            "objc_name": "configureApiWithCookiesInString:unbluUrlServer:unbluApiKey:enableUnbluDebugOutput:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(im)startWithCompletion:",
+            "mangledName": "$s10UnbluProxyAAC5start10completionyySb_SStc_tF",
+            "moduleName": "UnbluProxy",
+            "objc_name": "startWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getView",
+            "printedName": "getView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(im)getView",
+            "mangledName": "$s10UnbluProxyAAC7getViewSo6UIViewCSgyF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUnreadMessageCount",
+            "printedName": "getUnreadMessageCount()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(im)getUnreadMessageCount",
+            "mangledName": "$s10UnbluProxyAAC21getUnreadMessageCounts5Int32VyF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openConversationOverview",
+            "printedName": "openConversationOverview(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(im)openConversationOverviewWithCompletion:",
+            "mangledName": "$s10UnbluProxyAAC24openConversationOverview10completionyySb_SStc_tF",
+            "moduleName": "UnbluProxy",
+            "objc_name": "openConversationOverviewWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openConversation",
+            "printedName": "openConversation(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(im)openConversation:completion:",
+            "mangledName": "$s10UnbluProxyAAC16openConversation_10completionySS_ySb_SStctF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startAudioCall",
+            "printedName": "startAudioCall(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(im)startAudioCall:completion:",
+            "mangledName": "$s10UnbluProxyAAC14startAudioCall_10completionySS_ySb_SStctF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startVideoCall",
+            "printedName": "startVideoCall(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(im)startVideoCall:completion:",
+            "mangledName": "$s10UnbluProxyAAC14startVideoCall_10completionySS_ySb_SStctF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isInitialized",
+            "printedName": "isInitialized(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(im)isInitializedWithCompletion:",
+            "mangledName": "$s10UnbluProxyAAC13isInitialized10completionyySbc_tF",
+            "moduleName": "UnbluProxy",
+            "objc_name": "isInitializedWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy(im)stopWithCompletion:",
+            "mangledName": "$s10UnbluProxyAAC4stop10completionyySb_SStc_tF",
+            "moduleName": "UnbluProxy",
+            "objc_name": "stopWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unbluMobileCoBrowsingModuleDidStartCoBrowsing",
+            "printedName": "unbluMobileCoBrowsingModuleDidStartCoBrowsing(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnbluMobileCoBrowsingModuleApi",
+                "printedName": "UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleApi",
+                "usr": "s:27UnbluMobileCoBrowsingModule0abcdE3ApiP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC035unbluMobileCoBrowsingModuleDidStarteF0yy0adefG00adefG3Api_pF",
+            "mangledName": "$s10UnbluProxyAAC035unbluMobileCoBrowsingModuleDidStarteF0yy0adefG00adefG3Api_pF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unbluMobileCoBrowsingModuleDidStopCoBrowsing",
+            "printedName": "unbluMobileCoBrowsingModuleDidStopCoBrowsing(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnbluMobileCoBrowsingModuleApi",
+                "printedName": "UnbluMobileCoBrowsingModule.UnbluMobileCoBrowsingModuleApi",
+                "usr": "s:27UnbluMobileCoBrowsingModule0abcdE3ApiP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC034unbluMobileCoBrowsingModuleDidStopeF0yy0adefG00adefG3Api_pF",
+            "mangledName": "$s10UnbluProxyAAC034unbluMobileCoBrowsingModuleDidStopeF0yy0adefG00adefG3Api_pF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unblu",
+            "printedName": "unblu(didUpdateUnreadMessages:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC5unblu23didUpdateUnreadMessagesySi_tF",
+            "mangledName": "$s10UnbluProxyAAC5unblu23didUpdateUnreadMessagesySi_tF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unbluDidInitialize",
+            "printedName": "unbluDidInitialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC18unbluDidInitializeyyF",
+            "mangledName": "$s10UnbluProxyAAC18unbluDidInitializeyyF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unbluDidDeinitialize",
+            "printedName": "unbluDidDeinitialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC20unbluDidDeinitializeyyF",
+            "mangledName": "$s10UnbluProxyAAC20unbluDidDeinitializeyyF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unbluUiIsReady",
+            "printedName": "unbluUiIsReady()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC14unbluUiIsReadyyyF",
+            "mangledName": "$s10UnbluProxyAAC14unbluUiIsReadyyyF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unbluDidPreloadUi",
+            "printedName": "unbluDidPreloadUi()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC17unbluDidPreloadUiyyF",
+            "mangledName": "$s10UnbluProxyAAC17unbluDidPreloadUiyyF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unblu",
+            "printedName": "unblu(didTransitionUiWithTransition:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnbluUiVisibilityTransition",
+                "printedName": "UnbluCoreSDK.UnbluUiVisibilityTransition",
+                "usr": "c:@M@UnbluCoreSDK@E@UnbluUiVisibilityTransition"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC5unblu019didTransitionUiWithE0y0A7CoreSDK0af10VisibilityE0O_tF",
+            "mangledName": "$s10UnbluProxyAAC5unblu019didTransitionUiWithE0y0A7CoreSDK0af10VisibilityE0O_tF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unblu",
+            "printedName": "unblu(didUpdatePersonInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PersonInfo",
+                "printedName": "UnbluCoreSDK.PersonInfo",
+                "usr": "s:12UnbluCoreSDK10PersonInfoC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC5unblu19didUpdatePersonInfoy0A7CoreSDK0fG0C_tF",
+            "mangledName": "$s10UnbluProxyAAC5unblu19didUpdatePersonInfoy0A7CoreSDK0fG0C_tF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unblu",
+            "printedName": "unblu(didChangeOpenConversation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UnbluCoreSDK.UnbluConversation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnbluConversation",
+                    "printedName": "UnbluCoreSDK.UnbluConversation",
+                    "usr": "s:12UnbluCoreSDK0A12ConversationP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC5unblu25didChangeOpenConversationy0A7CoreSDK0aG0_pSg_tF",
+            "mangledName": "$s10UnbluProxyAAC5unblu25didChangeOpenConversationy0A7CoreSDK0aG0_pSg_tF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unblu",
+            "printedName": "unblu(didRequestHideUi:conversationId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnbluUiHideRequestReason",
+                "printedName": "UnbluCoreSDK.UnbluUiHideRequestReason",
+                "usr": "c:@M@UnbluCoreSDK@E@UnbluUiHideRequestReason"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC5unblu16didRequestHideUi14conversationIdy0A7CoreSDK0agfE6ReasonO_SSSgtF",
+            "mangledName": "$s10UnbluProxyAAC5unblu16didRequestHideUi14conversationIdy0A7CoreSDK0agfE6ReasonO_SSSgtF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unblu",
+            "printedName": "unblu(didRequestShowUi:requestedByUser:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnbluUiRequestReason",
+                "printedName": "UnbluCoreSDK.UnbluUiRequestReason",
+                "usr": "c:@M@UnbluCoreSDK@E@UnbluUiRequestReason"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC5unblu16didRequestShowUi15requestedByUsery0A7CoreSDK0agE6ReasonO_SbtF",
+            "mangledName": "$s10UnbluProxyAAC5unblu16didRequestShowUi15requestedByUsery0A7CoreSDK0agE6ReasonO_SbtF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unblu",
+            "printedName": "unblu(didToggleCallUi:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC5unblu15didToggleCallUiySb_tF",
+            "mangledName": "$s10UnbluProxyAAC5unblu15didToggleCallUiySb_tF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unblu",
+            "printedName": "unblu(didReceiveError:description:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnbluClientErrorType",
+                "printedName": "UnbluCoreSDK.UnbluClientErrorType",
+                "usr": "s:12UnbluCoreSDK0A15ClientErrorTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10UnbluProxyAAC5unblu15didReceiveError11descriptiony0A7CoreSDK0a6ClientF4TypeO_SStF",
+            "mangledName": "$s10UnbluProxyAAC5unblu15didReceiveError11descriptiony0A7CoreSDK0a6ClientF4TypeO_SStF",
+            "moduleName": "UnbluProxy",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@UnbluProxy@objc(cs)UnbluProxy",
+        "mangledName": "$s10UnbluProxyAAC",
+        "moduleName": "UnbluProxy",
+        "objc_name": "UnbluProxy",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "UnbluMobileCoBrowsingModuleDelegate",
+            "printedName": "UnbluMobileCoBrowsingModuleDelegate",
+            "usr": "s:27UnbluMobileCoBrowsingModule0abcdE8DelegateP",
+            "mangledName": "$s27UnbluMobileCoBrowsingModule0abcdE8DelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UnbluVisitorClientDelegate",
+            "printedName": "UnbluVisitorClientDelegate",
+            "usr": "s:12UnbluCoreSDK0A21VisitorClientDelegateP",
+            "mangledName": "$s12UnbluCoreSDK0A21VisitorClientDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UnbluClientDelegate",
+            "printedName": "UnbluClientDelegate",
+            "usr": "s:12UnbluCoreSDK0A14ClientDelegateP",
+            "mangledName": "$s12UnbluCoreSDK0A14ClientDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluMobileCoBrowsingModuleDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 388,
+      "length": 58,
+      "value": "\"UnbluProxy.unbluMobileCoBrowsingModuleDidStartCoBrowsing\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluMobileCoBrowsingModuleDelegate.swift",
+      "kind": "Dictionary",
+      "offset": 589,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluMobileCoBrowsingModuleDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 609,
+      "length": 143,
+      "value": "\"UnbluProxy.unbluMobileCoBrowsingModuleDidStartCoBrowsing. Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluMobileCoBrowsingModuleDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 751,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluMobileCoBrowsingModuleDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 937,
+      "length": 57,
+      "value": "\"UnbluProxy.unbluMobileCoBrowsingModuleDidStopCoBrowsing\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluMobileCoBrowsingModuleDelegate.swift",
+      "kind": "Dictionary",
+      "offset": 1136,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluMobileCoBrowsingModuleDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 1156,
+      "length": 141,
+      "value": "\"UnbluProxy.unbluMobileCoBrowsingModuleDidStopCoBrowsing. Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluMobileCoBrowsingModuleDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 1296,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 247,
+      "length": 54,
+      "value": "\"UnbluProxy.didUpdateUnreadMessages, value = \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 300,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 7,
+      "value": "\"count\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 147,
+      "value": "\"UnbluProxy.didUpdateUnreadMessages, value = \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 540,
+      "length": 1,
+      "value": "\". Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 633,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 705,
+      "length": 31,
+      "value": "\"UnbluProxy.unbluDidInitialize\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "Dictionary",
+      "offset": 873,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 893,
+      "length": 110,
+      "value": "\"UnbluProxy.unbluDidInitialize. Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 1002,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 1072,
+      "length": 33,
+      "value": "\"UnbluProxy.unbluDidDeinitialize\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "Dictionary",
+      "offset": 1244,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 1264,
+      "length": 114,
+      "value": "\"UnbluProxy.unbluDidDeinitialize. Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 1377,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 1441,
+      "length": 27,
+      "value": "\"UnbluProxy.unbluUiIsReady\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "Dictionary",
+      "offset": 1602,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 1622,
+      "length": 103,
+      "value": "\"UnbluProxy.unbluUiIsReady. Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 1724,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 1791,
+      "length": 30,
+      "value": "\"UnbluProxy.unbluDidPreloadUi\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "Dictionary",
+      "offset": 1958,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 1978,
+      "length": 109,
+      "value": "\"UnbluProxy.unbluDidPreloadUi. Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 2086,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 2223,
+      "length": 42,
+      "value": "\"UnbluProxy.didTransitionUiWithTransition\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "Dictionary",
+      "offset": 2421,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 2441,
+      "length": 140,
+      "value": "\"UnbluProxy.didTransitionUiWithTransition. Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 2580,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 2690,
+      "length": 32,
+      "value": "\"UnbluProxy.didUpdatePersonInfo\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "Dictionary",
+      "offset": 2867,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 2887,
+      "length": 119,
+      "value": "\"UnbluProxy.didUpdatePersonInfo. Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 3005,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 3135,
+      "length": 38,
+      "value": "\"UnbluProxy.didChangeOpenConversation\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "Dictionary",
+      "offset": 3324,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 3344,
+      "length": 131,
+      "value": "\"UnbluProxy.didChangeOpenConversation. Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 3474,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 3616,
+      "length": 56,
+      "value": "\"UnbluProxy.didRequestHideUi, value = \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 3671,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 3826,
+      "length": 16,
+      "value": "\"conversationId\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 3876,
+      "length": 140,
+      "value": "\"UnbluProxy.didRequestHideUi, value = \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 3931,
+      "length": 1,
+      "value": "\". Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4015,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4151,
+      "length": 57,
+      "value": "\"UnbluProxy.didRequestShowUi, value = \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4207,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4363,
+      "length": 17,
+      "value": "\"requestedByUser\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4415,
+      "length": 141,
+      "value": "\"UnbluProxy.didRequestShowUi, value = \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4471,
+      "length": 1,
+      "value": "\". Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4555,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4638,
+      "length": 47,
+      "value": "\"UnbluProxy.didToggleCallUi, value = \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4684,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4830,
+      "length": 8,
+      "value": "\"isOpen\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4864,
+      "length": 130,
+      "value": "\"UnbluProxy.didToggleCallUi, value = \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4910,
+      "length": 1,
+      "value": "\". Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 4993,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 5124,
+      "length": 52,
+      "value": "\"UnbluProxy.didReceiveError, value = \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 5175,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 5326,
+      "length": 13,
+      "value": "\"description\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 5370,
+      "length": 135,
+      "value": "\"UnbluProxy.didReceiveError, value = \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 5421,
+      "length": 1,
+      "value": "\". Internal notification sent for \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy+UnbluVisitorClientDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 5504,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 453,
+      "length": 45,
+      "value": "\"ubp.unbluproxy.unread.message.count.changed\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 566,
+      "length": 31,
+      "value": "\"ubp.unbluproxy.did.initialize\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 667,
+      "length": 33,
+      "value": "\"ubp.unbluproxy.did.deinitialize\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 765,
+      "length": 28,
+      "value": "\"ubp.unbluproxy.ui.is.ready\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 861,
+      "length": 31,
+      "value": "\"ubp.unbluproxy.did.preload.ui\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 979,
+      "length": 50,
+      "value": "\"ubp.unbluproxy.did.transition.ui.with.transition\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 1105,
+      "length": 39,
+      "value": "\"ubp.unbluproxy.did.update.person.info\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 1226,
+      "length": 45,
+      "value": "\"ubp.unbluproxy.did.change.open.conversation\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 1344,
+      "length": 36,
+      "value": "\"ubp.unbluproxy.did.request.hide.ui\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 1453,
+      "length": 36,
+      "value": "\"ubp.unbluproxy.did.request.show.ui\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 1561,
+      "length": 35,
+      "value": "\"ubp.unbluproxy.did.toggle.call.ui\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 1668,
+      "length": 35,
+      "value": "\"ubp.unbluproxy.did.received.error\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 1777,
+      "length": 37,
+      "value": "\"ubp.unbluproxy.did.start.cobrowsing\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 1887,
+      "length": 36,
+      "value": "\"ubp.unbluproxy.did.stop.cobrowsing\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4264,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 4629,
+      "length": 54,
+      "value": "\"UnbluProxy.configureApi : Register unblu call module\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 4966,
+      "length": 66,
+      "value": "\"UnbluProxy.configureApi : Register unblu call module successfuly\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 5092,
+      "length": 63,
+      "value": "\"UnbluProxy.configureApi : Register unblu call module failed !\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5176,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 5321,
+      "length": 61,
+      "value": "\"UnbluProxy.configureApi : Register unblu Co Browsing module\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 5909,
+      "length": 73,
+      "value": "\"UnbluProxy.configureApi : Register unblu Co Browsing module successfuly\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 6046,
+      "length": 70,
+      "value": "\"UnbluProxy.configureApi : Register unblu Co Browsing module failed !\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6137,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 6377,
+      "length": 47,
+      "value": "\"UnbluProxy.configureApi : createVisitorClient\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 6527,
+      "length": 52,
+      "value": "\"UnbluProxy.configureApi : createVisitorClient done\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 6908,
+      "length": 55,
+      "value": "\"UnbluProxy.configureApi : UnbluVisitorApi is not null\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6984,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7025,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 7459,
+      "length": 19,
+      "value": "\"UnbluProxy.start \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 7559,
+      "length": 43,
+      "value": "\"UnbluProxy.start : safeUnbluVisitorClient\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 7681,
+      "length": 49,
+      "value": "\"UnbluProxy.start : done. Switching on result...\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 7824,
+      "length": 36,
+      "value": "\"UnbluProxy.start : Switch success.\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7893,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 7899,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 7972,
+      "length": 36,
+      "value": "\"UnbluProxy.start : Switch failure.\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 8036,
+      "length": 44,
+      "value": "\"UnbluProxy.start : Switch failure error : \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8142,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 8523,
+      "length": 35,
+      "value": "\"UnbluProxy.getUnreadMessageCount \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 8639,
+      "length": 59,
+      "value": "\"UnbluProxy.getUnreadMessageCount : safeUnbluVisitorClient\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8805,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 8942,
+      "length": 38,
+      "value": "\"UnbluProxy.openConversationOverview \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 9061,
+      "length": 62,
+      "value": "\"UnbluProxy.openConversationOverview : safeUnbluVisitorClient\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 9219,
+      "length": 69,
+      "value": "\"UnbluProxy.openConversationOverview  : done. Switching on result...\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 9382,
+      "length": 47,
+      "value": "\"UnbluProxy.openConversationOverview : success\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9462,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 9468,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 9541,
+      "length": 55,
+      "value": "\"UnbluProxy.openConversationOverview : Switch failure.\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 9624,
+      "length": 63,
+      "value": "\"UnbluProxy.openConversationOverview : Switch failure error : \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9749,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 9967,
+      "length": 30,
+      "value": "\"UnbluProxy.openConversation \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 10078,
+      "length": 54,
+      "value": "\"UnbluProxy.openConversation : safeUnbluVisitorClient\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 10236,
+      "length": 61,
+      "value": "\"UnbluProxy.openConversation  : done. Switching on result...\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 10407,
+      "length": 39,
+      "value": "\"UnbluProxy.openConversation : success\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10479,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 10485,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 10558,
+      "length": 47,
+      "value": "\"UnbluProxy.openConversation : Switch failure.\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 10633,
+      "length": 55,
+      "value": "\"UnbluProxy.openConversation : Switch failure error : \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10750,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 10966,
+      "length": 28,
+      "value": "\"UnbluProxy.startAudioCall \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 11075,
+      "length": 52,
+      "value": "\"UnbluProxy.startAudioCall : safeUnbluVisitorClient\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 11231,
+      "length": 59,
+      "value": "\"UnbluProxy.startAudioCall  : done. Switching on result...\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 11400,
+      "length": 37,
+      "value": "\"UnbluProxy.startAudioCall : success\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 11465,
+      "length": 57,
+      "value": "\"UnbluProxy.startAudioCall : conversation.startAudioCall\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 11610,
+      "length": 86,
+      "value": "\"UnbluProxy.startAudioCall : conversation.startAudioCall done. Switching on result...\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 11811,
+      "length": 65,
+      "value": "\"UnbluProxy.startAudioCall : conversation.startAudioCall success\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11917,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 11923,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 12012,
+      "length": 64,
+      "value": "\"UnbluProxy.startAudioCall : conversation.startAudioCall failed\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 12112,
+      "length": 73,
+      "value": "\"UnbluProxy.startAudioCall : conversation.startAudioCall failed error : \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12255,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 12407,
+      "length": 45,
+      "value": "\"UnbluProxy.startAudioCall : Switch failure.\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 12480,
+      "length": 53,
+      "value": "\"UnbluProxy.startAudioCall : Switch failure error : \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12595,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 12811,
+      "length": 28,
+      "value": "\"UnbluProxy.startVideoCall \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 13233,
+      "length": 35,
+      "value": "\"UnbluProxy.startVideoCall success\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13309,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 13315,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13409,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13566,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 13849,
+      "length": 27,
+      "value": "\"UnbluProxy.isInitialized \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 13957,
+      "length": 51,
+      "value": "\"UnbluProxy.isInitialized : safeUnbluVisitorClient\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 14111,
+      "length": 35,
+      "value": "\"UnbluProxy.isInitialized  : done.\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14245,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 14389,
+      "length": 18,
+      "value": "\"UnbluProxy.stop \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 14488,
+      "length": 42,
+      "value": "\"UnbluProxy.stop : safeUnbluVisitorClient\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 14606,
+      "length": 49,
+      "value": "\"UnbluProxy.stop  : done. Switching on result...\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 14749,
+      "length": 27,
+      "value": "\"UnbluProxy.stop : success\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14809,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 14815,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 14888,
+      "length": 35,
+      "value": "\"UnbluProxy.stop : Switch failure.\""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 14951,
+      "length": 43,
+      "value": "\"UnbluProxy.stop : Switch failure error : \""
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15056,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15163,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ubp\/Workspace\/Unblu-Bindings\/iOS\/xCode\/UnbluProxy\/UnbluProxy\/UnbluProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 15170,
+      "length": 17,
+      "value": "\"Not initialized\""
+    }
+  ]
+}

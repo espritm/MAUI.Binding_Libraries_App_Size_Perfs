@@ -1,0 +1,52 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  
+  <attr path="/api/package[@name='com.unblu.sdk.core.internal.module']/class[@name='CoreApiModule']/method[@name='onDestroy' and count(parameter)=0]"
+        name="visibility">protected</attr>
+
+  <attr path="/api/package[@name='com.unblu.sdk.core.internal.module']/class[@name='CoreApiModule']/method[@name='doRegisterFunctionHandlers' and count(parameter)=1 and parameter[1][@type='android.webkit.WebView']]"
+        name="visibility">protected</attr>
+
+  <attr path="/api/package[@name='com.unblu.sdk.core.internal']/class[@name='UnbluCore']/method[@name='getMainView' and count(parameter)=0]"
+        name="managedReturn">Android.Views.View</attr>
+        
+  <attr path="/api/package[@name='com.unblu.sdk.core.internal']/interface[@name='ICoreProvider']/method[@name='getMainView' and count(parameter)=0]"
+        name="managedReturn">Android.Views.View</attr>
+        
+  <attr path="/api/package[@name='com.unblu.sdk.core.internal.delegate']"
+        name="managedName">Com.Unblu.Sdk.Core.Internal.UnbluDelegate</attr>
+
+  <attr path="/api/package[@name='com.unblu.sdk.core.internal.ui']/interface[@name='IMainView']/method[@name='getUnbluContainer' and count(parameter)=0]"
+          name="managedReturn">Android.Widget.RelativeLayout</attr>
+
+  <attr path="/api/package[@name='com.unblu.sdk.core.internal.ui']/interface[@name='IMainView']/method[@name='getMainView' and count(parameter)=0]"
+          name="managedName">UnbluMainView</attr>
+
+  <attr path="/api/package[@name='com.unblu.sdk.core.internal.ui']/class[@name='MainView']/method[@name='getMainView' and count(parameter)=0]"
+          name="managedName">UnbluMainView</attr>
+
+  <attr path="/api/package[@name='com.unblu.sdk.core.internal.ui']/interface[@name='IMainView']/method[@name='getUiState' and count(parameter)=0]"
+          name="managedName">UIState</attr>
+
+  <attr path="/api/package[@name='com.unblu.sdk.core.internal.ui']/class[@name='MainView']/method[@name='getUiState' and count(parameter)=0]"
+          name="managedName">UIState</attr>
+
+  <remove-node path="/api/package[@name='com.unblu.sdk.core.internal.model']/interface[@name='IUnbluIncomingCallUiConfigurationStub']/method[@name='toJson' and count(parameter)=1 and parameter[1][@type='com.unblu.sdk.core.internal.model.IUnbluIncomingCallUiConfigurationStub']]" />
+
+  <remove-node path="/api/package[@name='com.unblu.sdk.core.internal.visitor']/class[@name='VisitorClient']/method[@name='isAgentAvailable' and count(parameter)=2 and parameter[1][@type='com.unblu.sdk.core.callback.SuccessCallback&lt;java.lang.Boolean&gt;'] and parameter[2][@type='com.unblu.sdk.core.callback.NotInitializedExceptionCallback']]" />
+  
+  <remove-node path="/api/package[@name='com.unblu.sdk.core.visitor']/interface[@name='UnbluVisitorClient']/method[@name='isAgentAvailable' and count(parameter)=2 and parameter[1][@type='com.unblu.sdk.core.callback.SuccessCallback&lt;java.lang.Boolean&gt;'] and parameter[2][@type='com.unblu.sdk.core.callback.NotInitializedExceptionCallback']]"/>
+  
+  <attr path="/api/package[@name='com.unblu.sdk.core.internal']/class[@name='UnbluCore']/method[@name='onApiStateChanged' and count(parameter)=0]"
+          name="managedReturn">ReactiveX.RxJava3.Core.Observable</attr>
+      
+  <attr path="/api/package[@name='com.unblu.sdk.core.internal']/class[@name='UnbluCore']/method[@name='onLayersChanged' and count(parameter)=0]"
+          name="managedReturn">ReactiveX.RxJava3.Core.Observable</attr>
+</metadata>
+

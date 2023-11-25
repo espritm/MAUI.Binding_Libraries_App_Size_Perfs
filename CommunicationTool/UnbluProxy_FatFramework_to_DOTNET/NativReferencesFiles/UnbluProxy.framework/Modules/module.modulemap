@@ -1,0 +1,11 @@
+framework module UnbluProxy {
+  umbrella header "UnbluProxy.h"
+
+  export *
+  module * { export * }
+}
+
+module UnbluProxy.Swift {
+  header "UnbluProxy-Swift.h"
+  requires objc
+}
