@@ -12,3 +12,15 @@ First, build the binding projects :
   - CommunicationTool/Unblu-AAR-to-DOTNET/Unblu-AAR-to-DOTNET.csproj
 
 Then, build Binding_Libraries_App_Size_Perfs/Binding_Libraries_App_Size_Perfs.csproj. It will build its dependencies ESignature/ESignature/ESignature.csproj and CommunicationTool/CommunicationTool/CommunicationTool.csproj.
+
+# Purpose
+
+The purpose of this repo is to demonstrate an apk size issue with some of my binded libraries.
+
+When the MAUI project does not have a dependency to a binded project :
+Building the app in Debug gives a 10MB.
+Building the app in Release gives a 30MB.
+
+When the MAUI project has a dependency to the ESignature binded project : 
+Building the app in Debug gives a 28MB.
+Building the app in Release gives a 84MB.
